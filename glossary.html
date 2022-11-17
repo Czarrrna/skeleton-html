@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Anna" />
+
+
+    <title>CSS selectors</title>
+    <link rel="stylesheet" href="glossary.css" />
+    <link rel="icon" type="image/x-icon" href="book.ico">
+    <script src="glossary.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>CSS selectors</h1>
+    </header>
+    <article>
+        <p>
+            CSS selectors define the pattern to select elements to which a set of CSS rules are then applied.<br></p>
+        <div class="note">
+            <strong>Note:</strong> There are no selectors or combinators to select parent items, siblings of parents,
+                or children of parent siblings.
+        </div><br>
+            <p>CSS selectors can be grouped into the following categories based on the type of elements they can select.
+        </p>
+        <h2>Basic selectors</h2>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors">Universal selector</a><br>
+        Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.<br>
+        Syntax: <code>* ns|* *|*</code><br>
+        Example: <code>*</code> will match all the elements of the document.<br></p>
+        <div class="code">/* Selects all elements */<br>
+            * {<br>
+              color: green;<br>
+            }<br></div>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors">Type selector</a><br>
+        Selects all elements that have the given node name.<br>
+        Syntax: <code>elementname</code><br>
+        Example: input will match any <code>&#60;input&#62;</code> element.<br>
+</p>
+        <div class="code">/* All &#60;a&#62; elements. */
+            a {
+              color: red;
+            }</div>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">Class selector</a><br>
+                Selects all elements that have the given class attribute.</p>
+                <div class="code">/* All elements with class="spacious" */
+                    .spacious {
+                      margin: 2em;
+                    }
+                    
+                    /* All &#60;li&#62; elements with class="spacious" */
+                    li.spacious {
+                      margin: 2em;
+                    }
+                    
+                    /* All &#60;li&#62; elements with a class list that includes both "spacious" and "elegant" */
+                    /* For example, class="elegant retro spacious" */
+                    li.spacious.elegant {
+                      margin: 2em;
+                    }</div>
+        
+    </article>
+    <main>
+        <article>
+            <p>
+
+            </p>
+        </article>
+    </main>
+
+    <hr>
+    <footer>
+    </footer>
+</body>
+
+</html>

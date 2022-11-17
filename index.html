@@ -1,114 +1,106 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Anna" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Anna" />
 
 
-    <title>Moja stronka</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <script src="index.js"></script>
-  </head>
+  <title>My page</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="index.js" defer></script>
+</head>
 
-  <body>
+<body>
+  <div class="container">
     <header>
-      <h1>Moja stronka</h1>
+      <h1>My page</h1>
     </header>
-
     <nav>
-      <table>
-        <tbody>
-        <td><div><a href="">Home</a></li></div></td>
-        <td><div><a href="">Tab 1</a></li></div></td>
-        <td><div><a href="">Tab 2</a></li></div></td>
-        <td><div><a href="">Tab 3</a></li></div></td>
-        <td><form>
-            <input type="search" name="q" placeholder="Wpisz frazę" />
-            <input type="submit" value="Szukaj!" />
-          </form></td>
-        </tbody>
-      </table>
-      <hr>
+      <div class="div1"><a href="">Home</a></div>
+      <div class="div2"><a href="">Tab 1</a></div>
+      <div class="div3"><a href="">Tab 2</a></div>
+      <div class="div4"><a href="">Tab 3</a></div>
+      <form id="search">
+        <input type="search" name="q" placeholder="Ask" />
+        <input type="submit" value="Search!" />
+      </form>
     </nav>
-
-    <main>
-      <article>
-        <aside>
-            <h2>Linki</h2>
-            <ul>
-              <li><a href="http://www.google.com" target="_blank">Google</a></li>
-              <li><a href="http://www.google.com" target="_blank">Google</a></li>
-              <li><a href="http://www.google.com" target="_blank">Google</a></li>
-              </ul>
-          </aside>
-        <h2>Pan Tadeusz</h2>
-        <p>
-            <div>
-            Litwo! Ojczyzno moja! ty jesteś jak zdrowie:<br>
-            Ile cię trzeba cenić, ten tylko się dowie,<br>
-            Kto cię stracił. Dziś piękność twą w całej ozdobie<br>
-            Widzę i opisuję, bo tęsknię po tobie. <br><br>
-            Panno święta, co Jasnej bronisz Częstochowy<br>
-            I w Ostrej świecisz Bramie! Ty, co gród zamkowy<br>
-            Nowogródzki ochraniasz z jego wiernym ludem!<br>
-            Jak mnie dziecko do zdrowia powróciłaś cudem<br><br>
-            (Gdy od płaczącej matki, pod Twoją opiekę<br>
-            Ofiarowany, martwą podniosłem powiekę;<br>
-            I zaraz mogłem pieszo, do Twych świątyń progu<br>
-            Iść za wrócone życie podziękować Bogu),<br>
-            Tak nas powrócisz cudem na Ojczyzny łono. <br>
-            </div>
-            <div>
-            <img src="https://cdn.nakanapie.pl/q3GhHcwyVK0cqWEIBK-BfbcUzy4=/638x0/filters:format(jpeg)/o-1301602/n/pan-tadeusz" height="200px" />
-            </div>
-        </p>
-        <p>
-            <h2>Kodzik</h2>
-            <div><code>function BankAccount(id, owner, initialBalance) {<br>
-            this.id = id;<br>
-            this.owner = owner;<br>
-            this.balance = initialBalance;<br>
-            this.withdraw = function (balance, amount) {<br>
-                const newBalance = (balance - amount);<br>
-                return newBalance;<br>
-            }<br>
-            this.deposit = deposit; <br>
-        }
-        </code>
-    </div></p>
-
-        <h3>Obrazki</h3>
-        <p>
-        <table>
-            <tbody>
-                <td>
-                    <div><img src="https://www.tapetus.pl/obrazki/n/240087_dwa-slodkie-kotki.jpg" width="400px"/></div>
-                </td>
-                <td>
-                    <div><img src="https://t3.ftcdn.net/jpg/02/04/89/20/240_F_204892023_fUJ5ww8PiWkPwQVTwP4lyCmWFiXRYIa4.jpg" width="400px"/></div>
-                </td>
-            </tbody>
-        </table>
-        <aside>
-            <h2>Linki</h2>
-            <ul>
-              <li><a href="http://www.google.com" target="_blank">Google</a></li>
-              <li><a href="http://www.google.com" target="_blank">Google</a></li>
-              <li><a href="http://www.google.com" target="_blank">Google</a></li>
-              </ul>
-          </aside>
-        </p>
-      </article>
-    </main>
-
-    <hr>
+    <article class="content">
+      <p>
+      <div class="text">
+        <h2 id="pan_tadeusz">Pan Tadeusz</h2>
+        Litwo! Ojczyzno moja! ty jesteś jak zdrowie:<br>
+        Ile cię trzeba cenić, ten tylko się dowie,<br>
+        Kto cię stracił. Dziś piękność twą w całej ozdobie<br>
+        Widzę i opisuję, bo tęsknię po tobie. <br><br>
+        Panno święta, co Jasnej bronisz Częstochowy<br>
+        I w Ostrej świecisz Bramie! Ty, co gród zamkowy<br>
+        Nowogródzki ochraniasz z jego wiernym ludem!<br>
+        Jak mnie dziecko do zdrowia powróciłaś cudem<br><br>
+        (Gdy od płaczącej matki, pod Twoją opiekę<br>
+        Ofiarowany, martwą podniosłem powiekę;<br>
+        I zaraz mogłem pieszo, do Twych świątyń progu<br>
+        Iść za wrócone życie podziękować Bogu),<br>
+        Tak nas powrócisz cudem na Ojczyzny łono. <br>
+      </div>
+      <div class="pic">
+        <img
+          src="https://cdn.nakanapie.pl/q3GhHcwyVK0cqWEIBK-BfbcUzy4=/638x0/filters:format(jpeg)/o-1301602/n/pan-tadeusz"
+          height="300px" />
+      </div>
+      </p>
+      <p>
+      <div class="form">
+        <h2>Forms</h2>
+        <form id="fruit">
+          <div>
+            <label for="choose">Would you prefer a banana or a cherry?</label>
+            <input type="text" id="choose" name="i-like" required minlength="6" maxlength="6" />
+          </div>
+          <div>
+            <label for="number">How many would you like?</label>
+            <input type="number" id="number" name="amount" value="" min="1" max="10" required />
+          </div>
+          <div>
+            <button>Submit</button>
+          </div>
+        </form>
+        <form id="email">
+          <div>
+          <label for="mail">
+            I would like you to provide me with an e-mail address:
+          </label>
+          <input type="email" id="mail" name="mail" minlength=10 required />
+          <button>Submit</button>
+          </div>
+        </form>
+      </div>
+      </p>
+    </article>
+    <div class="gallery">
+      <h3>Pictures</h3>
+      <div><img src="https://www.tapetus.pl/obrazki/n/240087_dwa-slodkie-kotki.jpg" width="200px" /></div>
+      <div><img src="https://t3.ftcdn.net/jpg/02/04/89/20/240_F_204892023_fUJ5ww8PiWkPwQVTwP4lyCmWFiXRYIa4.jpg"
+          width="200px" /></div>
+    </div>
+    <aside>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+      </ul>
+    </aside>
     <footer>
-      <p>To jest stopka. <a href="mailto:email@example.com">Napisz do mnie</a> </p>
-      <address>Adres<br>
-                ul. Webowa 666 <br>
-                01-00 Warszawa <br></address>
+      <p>This is a footer. <a href="mailto:email@example.com">Write me an email</a> </p>
+      <label for="hugs">How much do you like me? </label>
+      <input type="range" name="hugs" id="hugs" min="0" max="100" step="1" value="50" />
+      <output class="hugs-output" for="hugs"></output>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
