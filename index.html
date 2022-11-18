@@ -94,6 +94,20 @@
         <li><a href="http://www.google.com" target="_blank">Google</a></li>
       </ul>
     </aside>
+    <ol id="elem">
+      <li>Hello</li>
+      <li>World</li>
+    </ol>
+    
+    <script>
+      function clear(elem) { /* your code */ }
+      function clear(elem) {
+    while (elem.firstChild) {
+      elem.firstChild.remove();
+    }
+  }
+      clear(elem); // clears the list
+    </script>
     <footer>
       <p>This is a footer. <a href="mailto:email@example.com">Write me an email</a> </p>
       <label for="hugs">How much do you like me? </label>

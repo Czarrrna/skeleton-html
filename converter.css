@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box {
+    grid-area: box;
+    grid-template-columns: 200px 200px;
+    display: grid;
+    grid-template-areas: 
+    "radioButtons radioButtons"
+    "inputs inputs"
+    "convert reset";
+    gap: 20px;
+}
+.container {
+    width: 400px;
+    border: solid 5px grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#radioButtons {
+    grid-area: radioButtons;
+}
+
+#inputs {
+    grid-area: inputs;
+}
+
+#convert {
+    grid-area: convert;
+    background-color: lightgreen;
+}
+
+#reset {
+    grid-area: reset;
+    background-color: lightcoral;
+    margin-left: 100px;
+}
+

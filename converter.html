@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Anna" />
+
+
+    <title>Convert temperature</title>
+    <link rel="stylesheet" href="converter.css" />
+    <link rel="icon" type="image/x-icon" href="therm.ico">
+    <script src="converter.js" async></script>
+</head>
+
+<body>
+    <div class="container">
+    <h1>Temperatures converter</h1>
+        <div id="box">
+            <div id="radioButtons">
+                <div><input type="radio" name="temperature" id="cels_to_far">Celsius to Farenheit</input></div>
+                <div><input type="radio" name="temperature" id="far_to_cels">Farenheit to Celsius</input></div>
+            </div>
+            <div id="inputs">
+                <div><label id="cels_label">Degrees Celsius</label>
+                    <input type="number" id="cels_number">
+                </div>
+                <div><label id="far_label">Degrees Farenheit</label>
+                    <input type="number" id="far_number">
+                </div>
+            </div>
+            <div><button id="convert">Convert</button></div>
+            <div><button id="reset">Reset</button></div>
+        </div>
+    </div>
+</body>
+
+</html>
